@@ -6,7 +6,13 @@
     <IsPackable>false</IsPackable>
 </PropertyGroup>
     <ItemGroup>
+      <Content Include="bin\Release\net5.0\bin\Release\net5.0\SimpleAPI.deps.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
       <Content Include="bin\Release\net5.0\SimpleAPI.deps.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Include="bin\Release\net5.0\SimpleAPI.Test.deps.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
     </ItemGroup>
