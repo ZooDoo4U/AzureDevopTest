@@ -15,11 +15,15 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+
 - task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: 
 
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
+
 
 - task: VSBuild@1
   inputs:
@@ -29,6 +33,7 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
     restoreNugetPackages: true
+
 
 - task: VSTest@2
   inputs:
