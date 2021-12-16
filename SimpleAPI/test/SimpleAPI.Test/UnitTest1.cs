@@ -25,6 +25,7 @@ namespace SimpleAPI.Test
         [Fact]
         public void GetMyName()
         {
+            Console.WriteLine( $"Test runs at {DateTime.Now.ToString()}" );
             System.Collections.Generic.IEnumerable<WeatherForecast> returnValue = controller.Get();
 
             int count = 0;
@@ -39,6 +40,7 @@ namespace SimpleAPI.Test
         [Fact]
         public async void Test1()
         {
+            Console.WriteLine( $"Test runs at {DateTime.Now.ToString()}" );
             string returnValue = await controller.GetMyName();
             Assert.Equal("Dand",returnValue);
             //var xxx = JsonConvert.DeserializeObject(returnValue.ToString());
