@@ -33,7 +33,6 @@ namespace SimpleAPI.Test
                 while(enumerator.MoveNext())
                     count++;
             }
-
             Assert.Equal( count, 5 );
         }
 
