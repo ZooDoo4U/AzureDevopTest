@@ -13,15 +13,15 @@
                   <Property Name="Class" Value="UnitTest1" />
                   <Rule Match="Any">
                     <Rule Match="All">
-                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="SimpleAPI.Test.UnitTest1.Test1" />
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="SimpleAPI.Test.UnitTest1.GetMyName" />
                       <Rule Match="Any">
-                        <Property Name="DisplayName" Value="SimpleAPI.Test.UnitTest1.Test1" />
+                        <Property Name="DisplayName" Value="GetMyName()" />
                       </Rule>
                     </Rule>
                     <Rule Match="All">
-                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="SimpleAPI.Test.UnitTest1.GetMyName" />
+                      <Property Name="TestWithNormalizedFullyQualifiedName" Value="SimpleAPI.Test.UnitTest1.Test1" />
                       <Rule Match="Any">
-                        <Property Name="DisplayName" Value="SimpleAPI.Test.UnitTest1.GetMyName" />
+                        <Property Name="DisplayName" Value="Test1()" />
                       </Rule>
                     </Rule>
                   </Rule>
