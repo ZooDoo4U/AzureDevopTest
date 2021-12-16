@@ -24,15 +24,18 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
+    vsVersion: '16.0'
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+    restoreNugetPackages: true
 
 - task: VSTest@2
   inputs:
     testSelector: 'testRun'
     searchFolder: '$(System.DefaultWorkingDirectory)'
-    uiTests: true
+    vsTestVersion: '16.0'
     runTestsInIsolation: true
+    testRunTitle: 'SampleAPI Test Results'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
