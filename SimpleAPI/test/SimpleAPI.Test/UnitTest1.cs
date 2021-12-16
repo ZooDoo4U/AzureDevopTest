@@ -31,7 +31,7 @@ namespace SimpleAPI.Test
         }
 
         [Test]
-        public async void Test1()
+        public async Task Test1()
         {
             Console.WriteLine( $"Test runs at {DateTime.Now.ToString()}" );
             string returnValue = await controller.GetMyName();
